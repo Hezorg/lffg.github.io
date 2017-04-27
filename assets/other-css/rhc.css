@@ -36,6 +36,11 @@ div#main-content > div:first-child {
 
 .headerbar {
   background-image: url(http://i.imgur.com/prv59kr.png);
+  transition: all linear 150ms;
+}
+
+.headerbar:hover {
+  background-position: 0px -61px;
 }
 
 a#logo {
