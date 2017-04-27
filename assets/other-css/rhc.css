@@ -180,3 +180,12 @@ li.btn-report,
   content: ''!important;
   display: none;
 }
+
+#fa_ticker_block .module {
+  background-color: #39c;
+  color: #fff!important;
+}
+
+#fa_ticker_block .module * {
+  color: #fff;
+}
