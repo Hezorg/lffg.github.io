@@ -159,3 +159,12 @@ div#page-footer:after {
   padding-bottom: 25px;
   font-weight: 400;
 }
+
+.button, .button1, .button2, input[type="submit"] {
+  background-color: #39c;
+}
+
+.button1:hover, .button2:hover, .button:hover, input[type="submit"]:hover {
+  background-color: #444!important;
+}
+
