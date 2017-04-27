@@ -2,3 +2,15 @@
   margin: 0px;
   padding: 0px;
 }
+
+div#page-footer:after {
+  content: 'Fórum feito por Luiz~ (luuuiiiz.) e por Kroton. Todos os direitos reservados.'!important;
+  color: #fff;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  padding-bottom: 25px;
+  font-weight: 400;
+}
+
