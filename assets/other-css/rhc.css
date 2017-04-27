@@ -3,6 +3,16 @@
   padding: 0px;
 }
 
+body,
+i,
+b,
+em,
+strong,
+span {
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 /**
  * CSS Theme - POLÍCIA RHC 2.1 ;
  * @author: Luiz~ (luuuiiiz.) [http://ajuda.forumeiros.com/u60563] 
