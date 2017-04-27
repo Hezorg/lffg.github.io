@@ -168,3 +168,15 @@ div#page-footer:after {
   background-color: #444!important;
 }
 
+li.btn-thank,
+li.btn-quote-multi,
+;i.btn-ip,
+li.btn-report,
+.vote {
+  display: none!important;
+}
+
+.online:before {
+  content: ''!important;
+  display: none;
+}
