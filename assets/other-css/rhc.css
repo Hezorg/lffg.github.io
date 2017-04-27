@@ -203,6 +203,7 @@ li.btn-report,
   background-color: #f3f3f3;
 }
 
-.module .h3 {
+.module .h3,
+.module .h3 *{
   color: #fff!important;
 }
