@@ -189,3 +189,16 @@ li.btn-report,
 #fa_ticker_block .module * {
   color: #fff;
 }
+
+.h3 {
+  border-bottom-color: #39c;
+  color: #3391bf!important;
+}
+
+.h3 * {
+  color: #3391bf!important;
+}
+
+.block-footer {
+  background-color: #f3f3f3;
+}
