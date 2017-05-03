@@ -5,6 +5,7 @@
  * @version: 1.0
  */
 
+
 /** Hippei: */
 (function ($) {
   'use strict';
@@ -29,6 +30,7 @@
     });
   });
 }(jQuery));
+
 
 /** Crazy */
 (function ($) {
