@@ -34,7 +34,7 @@
     $('.post').each(function () {
 
       var $this = $(this);
-      var $name = $('.postprofile-name a[href="/u1"]');
+      var $name = $('.postprofile-name a[href="/u5"]');
 
       $name
         .parents('.post')
