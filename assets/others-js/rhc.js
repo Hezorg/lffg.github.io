@@ -76,6 +76,16 @@
               '</div>',
             ].join( '\n'))
       ;
+      
+      $name
+        .parents('.post')
+          .find('.post-head')
+            .attr('style', [
+              'background-color: rgb(0, 0, 0);',
+              'border-bottom: none;',
+              'background: linear-gradient(141deg, #000000 0%, rgb(136, 72, 134) 51%, #cf66cc 75%);',
+            ].join('\n'))
+      ;
     });
   });
 }(jQuery));
