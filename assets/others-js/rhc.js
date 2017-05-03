@@ -27,6 +27,7 @@
 //   });
 // }(jQuery));
 
+/** Hippei: */
 (function ($) {
   'use strict';
 
@@ -45,6 +46,34 @@
               'Eu mando em td nessa budega!',
               '<br>',
               '<img src="https://illiweb.com/itest/ranks/stars/stars7.gif" title="Copiador de formulários do luiz. >:(">',
+            ].join( '\n'))
+      ;
+    });
+  });
+}(jQuery));
+
+/** Crazy */
+(function ($) {
+  'use strict';
+
+  $(function () {
+    $('.post').each(function () {
+
+      var $this = $(this);
+      var $name = $('.postprofile-name a[href="/u294"]');
+
+      $name
+        .parents('.post')
+          .find('.postprofile-rank')
+            .html([
+              '<strong>Rainha do <span style="color: #CC66CC;">rosa</span>.</strong><br>',
+              '<div style="color: #CC66CC;">',
+              '  <i class="ion-star"></i>',
+              '  <i class="ion-star"></i>',
+              '  <i class="ion-star"></i>',
+              '  <i class="ion-star"></i>',
+              '  <i class="ion-star"></i>',
+              '</div>',
             ].join( '\n'))
       ;
     });
