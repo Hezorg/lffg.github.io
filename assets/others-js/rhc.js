@@ -41,7 +41,7 @@
           .find('.postprofile-rank')
             .html([
               '<!-- Conteúdo modificado pelo fórum automáticamente: -->',
-              'Reizinho! <br/>
+              'Reizinho! <br/>',
               'Mando em td nessa budega!',
               '<br>',
               '<img src="https://illiweb.com/itest/ranks/stars/stars7.gif" title="Copiador de formulários do luiz. >:(">',
