@@ -7,29 +7,29 @@
 
 
 /** Hippei: */
-(function ($) {
-  'use strict';
+// (function ($) {
+//   'use strict';
 
-  $(function () {
-    $('.post').each(function () {
+//   $(function () {
+//     $('.post').each(function () {
 
-      var $this = $(this);
-      var $name = $('.postprofile-name a[href="/u5"]');
+//       var $this = $(this);
+//       var $name = $('.postprofile-name a[href="/u5"]');
 
-      $name
-        .parents('.post')
-          .find('.postprofile-rank')
-            .html([
-              '<!-- Conteúdo modificado pelo fórum automáticamente: -->',
-              '<b>EU</b> sou o Reizinho! <br/>',
-              'Eu mando em td nessa budega!',
-              '<br>',
-              '<img src="https://illiweb.com/itest/ranks/stars/stars7.gif" title="Copiador de formulários do luiz. >:(">',
-            ].join( '\n'))
-      ;
-    });
-  });
-}(jQuery));
+//       $name
+//         .parents('.post')
+//           .find('.postprofile-rank')
+//             .html([
+//               '<!-- Conteúdo modificado pelo fórum automáticamente: -->',
+//               '<b>EU</b> sou o Reizinho! <br/>',
+//               'Eu mando em td nessa budega!',
+//               '<br>',
+//               '<img src="https://illiweb.com/itest/ranks/stars/stars7.gif" title="Copiador de formulários do luiz. >:(">',
+//             ].join( '\n'))
+//       ;
+//     });
+//   });
+// }(jQuery));
 
 
 /** Crazy */
