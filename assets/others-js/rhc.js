@@ -1,4 +1,28 @@
 /**
- * Scripts
+ * Códigos da RHC
+ *
+ * @author Luiz~
+ * @version: 1.0
  */
-  console.log('Luiz está aqui.');
+(function ($) {
+  'use strict';
+
+  $(function () {
+    $('.post').each(function () {
+
+      var $this = $(this);
+      var $name = $('.postprofile-name a[href="/u78"]');
+
+      $name
+        .parents('.post')
+          .find('.postprofile-rank')
+            .html([
+              '<!-- Conteúdo modificado pelo fórum automáticamente: -->',
+              'Copiador de formulários do Luiz',
+              '<br>',
+              '<img src="https://illiweb.com/itest/ranks/default/default1.gif" title="Copiador de formulários do luiz. >:(">',
+            ].join( '\n'))
+      ;
+    });
+  });
+}(jQuery));
