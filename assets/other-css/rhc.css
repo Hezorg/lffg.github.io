@@ -24,3 +24,8 @@ div#page-footer:after {
 .headerbar {
   box-shadow: none!important;
 }
+
+html body div div div div.post-head {
+  background: #39c!important;
+  background-color: #39c!important;
+}
