@@ -8,3 +8,19 @@ div#page-footer:after {
   padding-bottom: 25px;
   font-weight: 400;
 }
+
+#fa_ticker_block .module,
+#right .module,
+.forabg,
+.forumbg,
+.statistics,
+.block,
+.is-sticky,
+.buttton,
+.btn,
+.button2,
+.button1,
+.post,
+.headerbar {
+  box-shadow: none!important;
+}
