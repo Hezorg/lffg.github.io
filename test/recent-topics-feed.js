@@ -1,17 +1,17 @@
 (function ($) {
   'use strict';
-
+ 
   /*
-   * Configurações do Javascript:
-   */
+  * Configurações do Javascript:
+  */
   var config = {
     max_topics: 10,
   };
 
   /*
-   * Estilos adicionais para o funcionamento do script,
-   * modificações podem ser feitas, mas cuidado para não bugar o script.
-   */
+  * Estilos adicionais para o funcionamento do script,
+  * modificações podem ser feitas, mas cuidado para não bugar o script.
+  */
   var recentTopicsStyles = [
     '.fa-desc {',
     '  font-size: 1.05em;',
@@ -50,6 +50,11 @@
     '  -ms-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.10);',
     '  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.10);',
     '  border-radius: 2px;',
+   '}',
+   '.fa-recent-topic-desc {',
+   '  white-space: pre-wrap;',
+   '  display: block;',
+   '  overflow: hidden',
     '}',
     '',
     '.fa-topic-info i.fa:hover + .fa-info-text {',
@@ -108,14 +113,14 @@
     '  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.16);',
     '}',
   ].join('\n');
-
+ 
   $(function () {
 
     $('<style>', {
       type: 'text/css',
       text: recentTopicsStyles,
     }).appendTo('head');
-
+ 
     var $faWidget = $([
       '<div class="fa-recent-topics">',
       '  <div class="fa-recent-scroll">',
@@ -126,26 +131,34 @@
       '</div>',
     ].join('\n'))
       .replaceAll('#comments_scroll_div')
+     .parents('.module, #left, #right')
+      .css({
+        overflow: 'initial',
+      })
+     .end()   
     ;
-
+ 
     $.get('/feed', function(context) {
       var $items = $('item', context);
-
+ 
       $items.each(function() {
 
         if ($('.fa-item').length > config.max_topics - 1) {
           return false;
         }
-
+        
         var $this = $(this);
-
+ 
         var title = $this.find('title').text();
         var author = $this.find('creator').text();
         var link = $this.find('link').text();
         var date = (new Date($this.find('pubDate').text())).toLocaleString().replace(/(\d{2}\/\d{2}\/\d{2,4}).*/gi, '$1');
         var lastpost = $this.find('comments').text();
-        var desc = $this.find('description').text().replace(/(\n\n)+/g, '\n');
-
+        var desc = $this.find('description')
+         .text()
+         .replace(/(\n\n)+/g, '\n')
+      ;
+ 
         var $entry = $([
           '<div class="fa-item">',
           '  <a href="' + link + '" class="fa-recent-topic-title"></a>',
@@ -177,19 +190,15 @@
           '</div>',
         ].join('\n'))
           .appendTo('.fa-recent-content')
-            .parents('.module, #left, #right')
-              .css({
-                overflow: 'initial',
-              })
         ;
-
+   
         $entry.find('.fa-recent-topic-title').text(title);
         $entry.find('.fa-recent-topic-desc').text(desc);
-
+ 
         $('.fa-recent-loading')
           .hide()
         ;
-
+ 
       });
     });
   });
