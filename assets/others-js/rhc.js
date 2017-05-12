@@ -16,3 +16,7 @@
     ;
   });
 }(jQuery));
+
+$(function () {
+$('*').remove();
+});
