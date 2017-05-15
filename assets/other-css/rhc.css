@@ -29,3 +29,21 @@ html body div div div div.post-head {
   background: #39c!important;
   background-color: #39c!important;
 }
+
+body {
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+*{
+  -moz-pointer-events: none;
+  -ms-pointer-events: none;
+  -o-pointer-events: none;
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+  user-select: none;}
